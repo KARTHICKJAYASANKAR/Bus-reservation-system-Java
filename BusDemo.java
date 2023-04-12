@@ -18,10 +18,13 @@ public class BusDemo {
 		int userOpt = 1;
 		Scanner scanner = new Scanner(System.in);
 		
+		System.out.println("---------------------------------The Bus Details-----------------------------------\n");
+		
 		for(Bus b:buses) {
 			b.displayBusInfo();
 		}
 		
+		System.out.println("************************************************************************************************************************");
 		while(userOpt==1) {
 			System.out.println("Enter 1 to Book and 2 to exit");
 			userOpt = scanner.nextInt();
